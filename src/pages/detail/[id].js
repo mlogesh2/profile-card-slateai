@@ -11,9 +11,7 @@ const DetailPage = () => {
     const [errorMsg, setErrorMsg] = useState("");
     const { favorites } = useContext(AppContext)
 
-    console.log("id: ", id);
     useEffect(() => {
-        console.log("Inside useeffect");
         if (id) {
             fetch("/assets/data.json")
                 .then((res) => res.json())
@@ -22,14 +20,11 @@ const DetailPage = () => {
                     if (!foundItem) {
                         setErrorMsg("No records found!")
                     }
-                    console.log("foundItem: ", foundItem)
                     setItem(foundItem);
                 })
                 .catch((error) => console.error("Error: ", error));
         }
     }, [id]);
-
-    console.log("item: ", item);
 
     return (
         <div className="container mx-auto p-6">

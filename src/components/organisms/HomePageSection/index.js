@@ -15,8 +15,6 @@ const HomePageSection = () => {
             .catch((error) => console.error("Error: ", error));
     }, []);
 
-    console.log("favorites: ", favorites);
-
     return (
         <div className="container mx-auto p-6">
             <div className="flex justify-between">

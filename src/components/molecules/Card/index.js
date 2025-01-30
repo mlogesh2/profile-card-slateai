@@ -20,7 +20,7 @@ const Card = ({ item, isFavorite, isOnlyFavSelected }) => {
     return (
         <div className="p-4 border rounded-lg shadow relative bg-slate-50">
             <div className="relative text-center">
-                <h3 className="font-semibold">{item.title}</h3>
+                <h3 className="font-semibold text-black">{item.title}</h3>
                 <SimpleButton callbackFn={() => onToggleFavorite(item._id)} classes={` ${isFavorite ? "text-yellow-500" : "text-gray-400"} text-xl absolute right-0 top-0 text-gray-400`}>
                     ★
                 </SimpleButton>

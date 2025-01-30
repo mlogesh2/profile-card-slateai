@@ -28,14 +28,14 @@ const DetailPage = () => {
     }, [id]);
 
     return (
-        <div className="container mx-auto p-6">
+        <div className="container mx-auto p-6 bg-white">
             <Head>
                 <title>{item?.title || "Details page "} | Profile Card Slate.ai</title>
                 <meta name="description" content="Profile cards details page" />
             </Head>
             {!errorMsg ? (
                 <>
-                    <h1 className="text-3xl font-bold text-center">{item?.title}</h1>
+                    <h1 className="text-3xl font-bold text-center text-black">{item?.title}</h1>
 
                     <div className="mt-4 p-4 border rounded bg-gray-100">
                         <Text><b>Company:</b>{item?.company}</Text>

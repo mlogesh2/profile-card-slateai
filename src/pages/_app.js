@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <AppContext.Provider value={{ favorites, onToggleFavorite }}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </AppContext.Provider>
   )
 }

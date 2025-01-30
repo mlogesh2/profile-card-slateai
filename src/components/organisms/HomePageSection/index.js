@@ -18,7 +18,7 @@ const HomePageSection = () => {
     return (
         <div className="container mx-auto p-6">
             <div className="flex justify-between">
-                <h1 className="text-2xl font-bold mb-6">{isOnlyFavSelected ? "Favourite cards" : "All Cards"}</h1>
+                <h1 className="text-2xl font-bold mb-6 text-black">{isOnlyFavSelected ? "Favourite cards" : "All Cards"}</h1>
                 <h2 className="text-yellow-500 font-semibold cursor-pointer" onClick={() => setIsOnlyFavSelected(prev => !prev)}>
                     {isOnlyFavSelected ? "Show all" : "+ Show only favorites"}
                 </h2>

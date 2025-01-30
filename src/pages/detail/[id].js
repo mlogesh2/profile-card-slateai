@@ -1,6 +1,7 @@
 import SimpleButton from "@/components/atoms/SimpleButton";
 import Text from "@/components/atoms/Text";
 import AppContext from "@/context";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
 
@@ -28,6 +29,10 @@ const DetailPage = () => {
 
     return (
         <div className="container mx-auto p-6">
+            <Head>
+                <title>{item?.title || "Details page "} | Profile Card Slate.ai</title>
+                <meta name="description" content="Profile cards details page" />
+            </Head>
             {!errorMsg ? (
                 <>
                     <h1 className="text-3xl font-bold text-center">{item?.title}</h1>

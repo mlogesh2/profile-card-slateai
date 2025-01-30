@@ -1,4 +1,4 @@
-const SimpleButton = ({ classes, callbackFn = () => { }, children }) => {
+const SimpleButton = ({ classes = "", callbackFn = () => { }, children }) => {
     return (
         <button
             className={`${classes}`}

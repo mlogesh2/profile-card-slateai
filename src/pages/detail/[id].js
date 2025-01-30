@@ -1,4 +1,5 @@
 import SimpleButton from "@/components/atoms/SimpleButton";
+import Text from "@/components/atoms/Text";
 import AppContext from "@/context";
 import { useRouter } from "next/router";
 import { useContext, useEffect, useState } from "react";
@@ -37,11 +38,11 @@ const DetailPage = () => {
                     <h1 className="text-3xl font-bold text-center">{item?.title}</h1>
 
                     <div className="mt-4 p-4 border rounded bg-gray-100">
-                        <p className="text-gray-700"><b>Company:</b>{item?.company}</p>
-                        <p className="text-gray-700"><b>Info:</b>{item?.info}</p>
-                        <p className="text-gray-700"><b>Description:</b>{item?.description}</p>
-                        <p className="text-gray-700"><b>ID: </b>{item?._id}</p>
-                        <p className="text-gray-700"><b>GUID:</b>{item?.guid}</p>
+                        <Text><b>Company:</b>{item?.company}</Text>
+                        <Text><b>Info:</b>{item?.info}</Text>
+                        <Text><b>Description:</b>{item?.description}</Text>
+                        <Text><b>ID: </b>{item?._id}</Text>
+                        <Text><b>GUID:</b>{item?.guid}</Text>
                     </div>
 
                     <div className="mt-4">
